@@ -23,7 +23,7 @@
     "react-spinners": "^0.6.1"
   },
   "scripts": {
-    "server": "node api/src/server.js",
+    "server": "nodemon api/src/server.js",
     "app": "parcel client/index.html --out-dir client/dist",
     "test-server": "jest api/tests"
   },
@@ -49,6 +49,7 @@
     "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-prettier": "^3.1.1",
     "jest": "^24.9.0",
+    "nodemon": "^1.19.3",
     "parcel": "^1.12.4",
     "prettier": "^1.18.2"
   }

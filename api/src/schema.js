@@ -9,6 +9,11 @@ const typeDefs = gql`
     username: String!
   }
 
+  input PetInput {
+    name: String
+    type: String
+  }
+
   type Pet {
     id: ID!
     createdAt: String!
@@ -17,7 +22,7 @@ const typeDefs = gql`
   }
 
   type Query {
-    pets: [Pet]!
+    pets(input: PetInput): [Pet]!
   }
 `
 
